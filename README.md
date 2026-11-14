@@ -1,6 +1,6 @@
 <h1 align="center"><img alt="pigo-logo" src="https://user-images.githubusercontent.com/883386/55795932-8787cf00-5ad1-11e9-8c3e-8211ba9427d8.png" height=240/></h1>
 
-[![CI](https://github.com/esimov/pigo/actions/workflows/ci.yml/badge.svg)](https://github.com/esimov/pigo/actions/workflows/ci.yml)
+[![CI/CD](https://github.com/esimov/pigo/actions/workflows/build.yml/badge.svg)](https://github.com/esimov/pigo/actions/workflows/build.yml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/esimov/pigo)](https://goreportcard.com/report/github.com/esimov/pigo)
 [![go.dev reference](https://img.shields.io/badge/pkg.go.dev-reference-007d9c?logo=go)](https://pkg.go.dev/github.com/esimov/pigo/core)
 [![license](https://img.shields.io/github/license/esimov/pigo)](./LICENSE)
@@ -204,14 +204,14 @@ Using the `empty` string as value for the `-out` flag will skip the image genera
 
 If you wish to test the library's real time face detection capabilities, the `examples` folder contains a few demos written in Python.
 
-**But why Python you might ask?** Because the Go ecosystem is (still) missing a cross platform and system independent library for accessing the webcam. 
+**But why Python you might ask?** Because the Go ecosystem is (still) missing a cross platform and system independent library for accessing the webcam.
 
-In the Python program we access the webcam and transfer the pixel data as a byte array through `cgo` as a **shared object** to the Go program where the core face detection is happening. But as you can imagine this operation is not cost effective, resulting in lower frame rates than the library is capable of. 
+In the Python program we access the webcam and transfer the pixel data as a byte array through `cgo` as a **shared object** to the Go program where the core face detection is happening. But as you can imagine this operation is not cost effective, resulting in lower frame rates than the library is capable of.
 
 ## WASM (Webassembly) support 🎉
 **Important note: In order to run the Webassembly demos at least Go 1.13 is required!**
 
-Starting from version **v1.4.0** the library has been ported to [**WASM**](http://webassembly.org/). This proves the library's real time face detection capabilities, constantly producing **~60 FPS**. 
+Starting from version **v1.4.0** the library has been ported to [**WASM**](http://webassembly.org/). This proves the library's real time face detection capabilities, constantly producing **~60 FPS**.
 
 ### WASM demo
 To run the `wasm` demo select the `wasm` folder and type `make`.
