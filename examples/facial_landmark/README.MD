@@ -1,14 +1,12 @@
 ## Facial landmark points detection demo
 
-Python demo for live webcam facial landmark points detection.
-
 ### Requirements
 * OpenCV2
-* Python2
+* Python
 
 ### Usage
 ```bash
-$ python2 flploc.py
+$ python flploc.py
 ```
 
 ### Keys:

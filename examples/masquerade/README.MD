@@ -1,14 +1,12 @@
-## Image overlay demo 
-
-In this demo we detect a person's eyes and place an overlay mask like sunglasses which can be replaced by pressing the keys documented below.
+## Image overlay demo
 
 ### Requirements
 * OpenCV2
-* Python2
+* Python
 
 ### Usage
 ```bash
-$ python2 puploc.py
+$ python puploc.py
 ```
 
 ### Keys:

@@ -1,14 +1,12 @@
 ## Pupils/eyes localization demo
 
-Python demo for live webcam pupils/eyes localization.
-
 ### Requirements
 * OpenCV2
-* Python2
+* Python
 
 ### Usage
 ```bash
-$ python2 puploc.py
+$ python puploc.py
 ```
 
 ### Keys:
